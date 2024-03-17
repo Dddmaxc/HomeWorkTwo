@@ -1,0 +1,43 @@
+html {
+}
+.App {
+	display: flex;
+	margin-top: 15%;
+	margin-left: 7%;
+	margin-right: 7%;
+	flex-direction: column;
+
+	--header_height: 60px;
+}
+
+.hw {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 100%;
+	border-top: 1px solid rgba(217, 217, 217, 1);
+	margin-bottom: 50px;
+	padding-top: 35px;
+}
+
+.hwFM {
+	display: flex;
+	justify-content: space-between;
+	align-items: end;
+	margin-top: 50px;
+}
+
+.hwTitle {
+	font-family: Montserrat;
+	font-size: 22px;
+	font-weight: 600;
+	line-height: 27px;
+	letter-spacing: 0em;
+	text-align: left;
+	margin-bottom: 10px;
+}
+.hr {
+	margin-top: 32px;
+	width: 100%;
+	border-top: 1px solid rgba(217, 217, 217, 1);
+}

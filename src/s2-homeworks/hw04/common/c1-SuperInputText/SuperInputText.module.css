@@ -2,19 +2,31 @@
 }
 
 .input {
+	width: 372px;
+	height: 36px;
+	border: 1px solid rgba(209, 209, 209, 1);
+	font-size: 20px;
+	padding: 10px;
 }
 
 .inputWrapper {
+	display: flex;
+	flex-direction: column-reverse;
 }
 
 .superInput {
 }
 
 .errorInput {
+	border: 1px solid rgba(204, 20, 57, 1);
 }
 
-.errorInput:focus {
+.errorInput:focus-visible {
+	border: 1px solid rgba(204, 20, 57, 1);
+	outline: 1px solid rgba(204, 20, 57, 1);
 }
 
 .error {
+	display: block;
+	color: rgba(204, 20, 57, 1);
 }

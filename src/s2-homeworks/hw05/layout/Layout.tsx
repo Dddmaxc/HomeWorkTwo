@@ -8,13 +8,15 @@ type PropsType = {
 
 export const Layout: FC<PropsType> = ({ children }) => {
 	const [open, setOpen] = useState(false)
+	console.log(open)
 	const handleClose = () => setOpen(false)
 	const handleOpen = () => setOpen(true)
 
 	useEffect(() => {
 		open && (document.body.style.overflow = 'hidden')
 		!open && (document.body.style.overflow = 'unset')
-		open && (document.body.style.background = '#0000004c')
+		// open && (document.body.style.background = '#0000004c')
+		// !open && (document.body.style.background = '#ffffffef')
 	}, [open]) // отключает прокрутку при открытом меню
 
 	return (

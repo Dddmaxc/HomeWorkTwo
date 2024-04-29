@@ -42,7 +42,6 @@ const HW6 = () => {
 
 				<div className={s.buttonsContainer}>
 					<SuperButton
-						id={'hw6-save'}
 						onClick={save}
 						style={{
 							background: '#0066CC',

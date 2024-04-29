@@ -79,7 +79,7 @@ const SuperEditableSpan: React.FC<SuperEditableSpanType> = ({
 					}}
 					autoFocus={autoFocus || true}
 					onBlur={onBlurCallback}
-					onEnter={onEnterCallback}
+					onKeyPress={onEnterCallback}
 					{...restProps} // отдаём инпуту остальные пропсы если они есть (value например там внутри)
 				/>
 			) : (

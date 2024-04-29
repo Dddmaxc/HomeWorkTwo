@@ -51,3 +51,29 @@
 .button:disabled {
 	background: rgba(0, 77, 153, 1);
 }
+
+[id='hw6-save'] {
+	background: #0066cc;
+	color: #fff;
+	width: 116px;
+	height: 30px;
+	padding: 5px, 24px, 5px, 24px;
+	border-radius: 3px;
+	font-family: Montserrat serif;
+	font-weight: 600;
+	font-size: 14px;
+	line-height: 20px;
+}
+
+[id='hw6-restore'] {
+	background: white;
+	color: #0066cc;
+	width: 129px;
+	height: 30px;
+	padding: 5px, 24px, 5px, 24px;
+	border-radius: 3px;
+	font-family: Montserrat serif;
+	font-weight: 600;
+	font-size: 14px;
+	line-height: 20px;
+}

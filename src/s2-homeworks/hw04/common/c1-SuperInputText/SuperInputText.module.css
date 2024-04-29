@@ -30,3 +30,7 @@
 	display: block;
 	color: rgba(204, 20, 57, 1);
 }
+
+[id='edit'] {
+	color: #0080ff;
+}

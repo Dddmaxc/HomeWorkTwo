@@ -1,22 +1,16 @@
 {
   "files": {
-    "main.css": "/HomeWorkTwo/static/css/main.5ebcc119.css",
-    "main.js": "/HomeWorkTwo/static/js/main.5cd9c8cc.js",
+    "main.css": "/HomeWorkTwo/static/css/main.80e57de3.css",
+    "main.js": "/HomeWorkTwo/static/js/main.5df68fa7.js",
     "static/js/787.66cb4309.chunk.js": "/HomeWorkTwo/static/js/787.66cb4309.chunk.js",
-    "static/media/Saske.jpg": "/HomeWorkTwo/static/media/Saske.a7aaba6f5f6943812b49.jpg",
-    "static/media/avatar.png": "/HomeWorkTwo/static/media/avatar.d947cb9d0d13765666b6.png",
-    "static/media/404.svg": "/HomeWorkTwo/static/media/404.9ec31c0ba8d95b0480272e46af98c955.svg",
-    "static/media/Naruto.jpg": "/HomeWorkTwo/static/media/Naruto.968b7ccde0f625071fdf.jpg",
-    "static/media/closeOutline.svg": "/HomeWorkTwo/static/media/closeOutline.b64ba402fac8a549bc2de97e9cf84a61.svg",
+    "static/media/editIcon.svg": "/HomeWorkTwo/static/media/editIcon.0a0cefd2190b593b4f76bb1a5afe0c1f.svg",
     "index.html": "/HomeWorkTwo/index.html",
-    "static/media/checked.svg": "/HomeWorkTwo/static/media/checked.b75ca55e8759862b4083.svg",
-    "static/media/burger.svg": "/HomeWorkTwo/static/media/burger.700e416f7bfe3697f96b36c778d25355.svg",
-    "main.5ebcc119.css.map": "/HomeWorkTwo/static/css/main.5ebcc119.css.map",
-    "main.5cd9c8cc.js.map": "/HomeWorkTwo/static/js/main.5cd9c8cc.js.map",
+    "main.80e57de3.css.map": "/HomeWorkTwo/static/css/main.80e57de3.css.map",
+    "main.5df68fa7.js.map": "/HomeWorkTwo/static/js/main.5df68fa7.js.map",
     "787.66cb4309.chunk.js.map": "/HomeWorkTwo/static/js/787.66cb4309.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.5ebcc119.css",
-    "static/js/main.5cd9c8cc.js"
+    "static/css/main.80e57de3.css",
+    "static/js/main.5df68fa7.js"
   ]
 }

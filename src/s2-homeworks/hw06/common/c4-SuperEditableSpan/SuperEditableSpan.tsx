@@ -7,7 +7,6 @@ import React, {
 import s from './SuperEditableSpan.module.css'
 import SuperInputText from '../../../hw04/common/c1-SuperInputText/SuperInputText'
 import editIcon from './editIcon.svg'
-
 // тип пропсов обычного инпута
 type DefaultInputPropsType = DetailedHTMLProps<
 	InputHTMLAttributes<HTMLInputElement>,
@@ -27,7 +26,7 @@ type SuperEditableSpanType = Omit<DefaultInputPropsType, 'type'> & {
 	onEnter?: () => void
 	error?: string
 
-	spanProps?: DefaultSpanPropsType & { defaultText?: string } // пропсы для спана
+	spanProps?: DefaultSpanPropsType & { defaultText?: string }
 }
 
 const SuperEditableSpan: React.FC<SuperEditableSpanType> = ({
@@ -39,63 +38,54 @@ const SuperEditableSpan: React.FC<SuperEditableSpanType> = ({
 	...restProps // все остальные пропсы попадут в объект restProps
 }) => {
 	const [editMode, setEditMode] = useState<boolean>(false)
-	const { children, onDoubleClick, className, defaultText, ...restSpanProps } =
+	const { children, onDoubleClick, className, ...restSpanProps } =
 		spanProps || {}
 
-	const onEnterCallback = (e: React.KeyboardEvent<HTMLInputElement>) => {
-		if (e.key === 'Enter') {
-			setEditMode(false)
-		}
-		// выключить editMode при нажатии Enter // делают студенты
+	const onEnterCallback = () => {
+		setEditMode(false) // выключить editMode при нажатии Enter // делают студенты
 
 		onEnter?.()
 	}
 	const onBlurCallback = (e: React.FocusEvent<HTMLInputElement>) => {
-		setEditMode(false)
-		// выключить editMode при нажатии за пределами инпута // делают студенты
+		setEditMode(false) // выключить editMode при нажатии за пределами инпута // делают студенты
 
 		onBlur?.(e)
 	}
 	const onDoubleClickCallBack = (
 		e: React.MouseEvent<HTMLSpanElement, MouseEvent>
 	) => {
-		setEditMode(true)
-		// включить editMode при двойном клике // делают студенты
+		setEditMode(true) // включить editMode при двойном клике // делают студенты
 
 		onDoubleClick?.(e)
 	}
 
-	const spanClassName = s.span + (className ? ' ' + className : '')
+	const spanClassName = `${s.span} ${className ? className : ''}`
 
 	return (
 		<>
 			{editMode ? (
 				<SuperInputText
-					style={{
-						border: '1px solid #D1D1D1',
-						width: '276px',
-						height: '36px',
-						borderRadius: '5px',
-					}}
 					autoFocus={autoFocus || true}
 					onBlur={onBlurCallback}
-					onKeyPress={onEnterCallback}
+					onEnter={onEnterCallback}
+					className={s.input}
 					{...restProps} // отдаём инпуту остальные пропсы если они есть (value например там внутри)
 				/>
 			) : (
-				<div className={s.spanBlock}>
-					<img src={editIcon} className={s.pen} alt={'edit'} />
-					<span
-						onDoubleClick={onDoubleClickCallBack}
-						className={spanClassName}
-						{...restSpanProps}
-						id={'edit'}
-					>
-						{/*если нет захардкодженного текста для спана, то значение инпута*/}
-
-						{children || restProps.value || defaultText}
-					</span>
-				</div>
+				<span
+					onDoubleClick={onDoubleClickCallBack}
+					className={spanClassName}
+					{...restSpanProps}
+				>
+					{/*если нет захардкодженного текста для спана, то значение инпута*/}
+					<img
+						src={editIcon}
+						width={'24px'}
+						height={'24px'}
+						alt={'edit'}
+					/>{' '}
+					{children || restProps.value}
+				</span>
 			)}
 		</>
 	)

@@ -58,7 +58,7 @@ const SuperRadio: React.FC<SuperRadioPropsType> = ({
 						// name, checked, value делают студенты
 						onChange={onChangeCallback}
 						{...restProps}
-						value={value}
+						value={o.value}
 					/>
 					<span
 						id={id + '-span-' + o.id}

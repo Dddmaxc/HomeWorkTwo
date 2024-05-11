@@ -22,7 +22,7 @@ const arr: OptionType[] = [
 ] // value может быть изменено
 
 const HW7 = () => {
-	const [value, onChangeOption] = useState('Pre-junior') // селект и радио должны работать синхронно
+	const [value, onChangeOption] = useState(1) // селект и радио должны работать синхронно
 
 	return (
 		<div id={'hw7'}>

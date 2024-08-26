@@ -39,14 +39,14 @@ function Clock() {
 		// пишут студенты // спрятать дату если мышка не наведена
 	}
 
-	const stringTime = date.toLocaleTimeString('en-US', {
+	const stringTime = date.toLocaleTimeString('ru-RU', {
 		hour: '2-digit',
 		minute: '2-digit',
 		second: '2-digit',
 		hour12: false,
 	}) || <br /> // часы24:минуты:секунды (01:02:03)/(23:02:03)/(24:00:00)/(00:00:01) // пишут студенты
 
-	const stringDate = new Intl.DateTimeFormat('en-US', {
+	const stringDate = new Intl.DateTimeFormat('ru-RU', {
 		day: '2-digit',
 		month: '2-digit',
 		year: 'numeric',

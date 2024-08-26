@@ -1,10 +1,40 @@
 .buttonsContainer {
+	display: flex;
+	gap: 10px;
+}
+
+[id='hw9-button-start'] {
+	width: 82px;
+	height: 30px;
+	padding: 5px 24px 5px 24px;
+	border-radius: 3px 0px 0px 0px;
+	opacity: 0.4px;
+}
+
+[id='hw9-button-start']:hover {
+	background: #0066cc;
+}
+
+[id='hw9-button-stop'] {
+	width: 82px;
+	height: 30px;
+	padding: 5px 24px 5px 24px;
+	border-radius: 3px 0px 0px 0px;
+	opacity: 0.4px;
+}
+[id='hw9-button-stop']:hover {
+	background: #0066cc;
 }
 
 .clock {
 }
 
 .watch {
+	font-family: Montserrat;
+	font-size: 20px;
+	font-weight: 400;
+	line-height: 24.38px;
+	text-align: left;
 }
 
 .watch strong {
